@@ -4,6 +4,7 @@ export const ProductGallery = ({ activeImage, setActiveImage, image }) => {
   return (
     <div className='product-gallery'>
       <img className='active-img' src={activeImage} alt='Product' />
+      {console.log(activeImage)}
       <div className='thumbnail-container'>
         {image.map((img, index) => (
           <img

@@ -169,12 +169,13 @@ nav ul li:hover {
   display: flex;
   gap: 15px;
   margin-top: 20px;
-  border: 1px solid #eee;
+
   padding: 10px;
   margin-left: 15px;
 }
 
 .thumbnail-container img {
+  margin: 0 auto;
   width: 80px;
   border-radius: 12px;
   border: 2px solid transparent;
