@@ -26,17 +26,17 @@ export const Header = ({
         <li>About</li>
         <li>Contact</li>
       </ul>
-      <div className='menu'>
-        <i
-          onClick={() => setMenuOpen((prev) => !prev)}
-          class='ri-menu-line'
-        ></i>
-      </div>
 
       <div className='cart-container'>
         <button onClick={() => setCartOpen(!cartOpen)}>
           <i class='ri-shopping-cart-2-line'></i>
         </button>
+        <div className='menu'>
+          <i
+            onClick={() => setMenuOpen((prev) => !prev)}
+            class='ri-menu-line'
+          ></i>
+        </div>
         {cart.length > 0 && <span className='cart-badge'></span>}
       </div>
       {cartOpen && (
