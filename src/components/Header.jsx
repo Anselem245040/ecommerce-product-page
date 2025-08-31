@@ -28,15 +28,15 @@ export const Header = ({
       </ul>
 
       <div className='cart-container'>
-        <button onClick={() => setCartOpen(!cartOpen)}>
-          <i class='ri-shopping-cart-2-line'></i>
-        </button>
         <div className='menu'>
           <i
             onClick={() => setMenuOpen((prev) => !prev)}
             class='ri-menu-line'
           ></i>
         </div>
+        <button onClick={() => setCartOpen(!cartOpen)}>
+          <i class='ri-shopping-cart-2-line'></i>
+        </button>
         {cart.length > 0 && <span className='cart-badge'></span>}
       </div>
       {cartOpen && (
